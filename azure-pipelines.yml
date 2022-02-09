@@ -6,7 +6,7 @@
 trigger:
 - main
 
-pool: mypool
+pool: 'mypool'
   vmImage: DESKTOP-SQ7KQ1N
 
 steps:
