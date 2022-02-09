@@ -6,8 +6,13 @@
 trigger:
 - main
 
+
+#pool: 
+#  vmImage: DESKTOP-SQ7KQ1N
 pool: 
-  vmImage: DESKTOP-SQ7KQ1N
+  name: mypool
+  demands:
+   - agent.name -equals DESKTOP-SQ7KQ1N
 
 steps:
 - script: echo Hello, world!
