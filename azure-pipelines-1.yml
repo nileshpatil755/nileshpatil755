@@ -6,8 +6,12 @@
 trigger:
 - main
 
-pool:
-  vmImage: ubuntu-latest
+#pool:
+#  vmImage: ubuntu-latest
+pool: 
+  name: mypool
+  demands:
+   - agent.name -equals DESKTOP-SQ7KQ1N
 
 steps:
 - task: NodeTool@0
